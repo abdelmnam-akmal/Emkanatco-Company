@@ -1,0 +1,34 @@
+.counter {
+    padding: 70px 120px;
+    background-color: $flat1F;
+    @media #{$maxMobile} {
+        padding: 60px 15px;
+    }
+    .counter-content {
+        .counter-container {
+            @extend %center-align;
+            justify-content: space-around;
+            @media #{$maxMobile} {
+                flex-direction: column;
+            }
+            li {
+                text-align: center;
+                @media #{$maxMobile} {
+                    flex-wrap: wrap;
+                    margin-bottom: 25px;
+                }
+                span {
+                    display: block;
+                    font-size: 18px;
+                    color: $colorOne;
+                    &:first-of-type {
+                        margin-bottom: 20px;
+                        font-weight:  bold;
+                        font-size: 35px;
+                        color: $flatFFF;
+                    }
+                }
+            }
+        }
+    }
+}

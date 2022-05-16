@@ -1,0 +1,50 @@
+.about-us {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #f4f4f3;
+    .about-img {
+        margin-bottom: 80px;
+        > div {
+            img {
+                width: 100%;
+                box-shadow: -1px 4px 24px -5px $flat74;
+            }
+            video {
+                width: 100%;
+            }
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    .about-info {
+        @media #{$maxMobile} {
+            margin-bottom: 30px;
+        }
+        > div {
+            .h-about {
+                display: block;
+                font-weight: bold;
+                position: relative;
+                padding-bottom: 15px;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    background-color: $colorOne;
+                    height: 2px;
+                    width: 20%;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+            p:first-of-type {
+                margin-top: 30px;
+                color: $flat74;
+                font-size: 19px;
+            }
+        }
+        &.special {
+            @extend %center-align;
+        }
+    }
+}

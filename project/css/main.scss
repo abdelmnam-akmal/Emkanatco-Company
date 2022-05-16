@@ -1,0 +1,21 @@
+//helpers
+@import "sass/helpers/var"; // variables
+@import "sass/helpers/extend"; // extends
+
+//global and components
+@import "sass/global/global"; // global
+@import "sass/components/components"; // components
+
+//layout
+@import "sass/layout/header";
+
+// sections
+@import "sass/sections/carousel-content"; // carousel
+@import "sass/sections/about-us"; // about-us
+@import "sass/sections/counter"; // countainer
+@import "sass/sections/portfolio"; // portfolio
+@import "sass/sections/info"; // info
+@import "sass/sections/contact-us"; // contact-us
+
+//layout
+@import "sass/layout/footer"; //footer

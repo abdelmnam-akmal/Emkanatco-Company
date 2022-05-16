@@ -1,0 +1,34 @@
+.navbar {
+    background-color: $flatblack;
+    opacity: .82;
+    padding: 20px 150px;
+    z-index: 2;
+    transition: $trans;
+    @media #{$maxMobile} {
+        padding: 20px 0;
+    }
+    .navbar-brand {
+        color: $colorOne;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .navbar-toggler {
+        background-color: $flatFFF;
+        padding: 5px;
+    }
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: $flatFFF;
+                padding: 5px 20px;
+            }
+        }
+    }
+    &.navbar-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999999999
+    }
+}

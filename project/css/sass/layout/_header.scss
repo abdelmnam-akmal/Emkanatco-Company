@@ -1,0 +1,92 @@
+.header {
+    background-color: $flatE6;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    @media #{$maxMobile} {
+        padding-bottom: 15px;
+    }
+    .address-details {
+        ul {
+            @extend %center-align;
+            flex-wrap: wrap;
+            li {
+                margin-right: 30px;
+                margin-bottom: 10px;
+                i {
+                    margin-left: 10px;
+                    color: $colorOne;
+                }
+                span {
+                    color: $flat72;
+                }
+            }
+        }
+    }
+    .links-header {
+        > div {
+            ul {
+                @extend %center-align;
+                justify-content: center;
+                flex-wrap: wrap;
+                li {
+                    margin-right: 25px;
+                    i {
+                        color: #2e2e2e;
+                        transition: $trans;
+                        @extend %cursor;
+                        &:hover {
+                            color: $flat72;
+                        }
+                    }
+                    &:first-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+// start under header
+.under-header {
+    padding: 40px 100px 40px 0;
+    @media #{$maxMobile} {
+        padding: 40px 0 40px;
+    }
+    .logo-content {
+        @extend %center-align;
+        justify-content: center;
+    }
+    .details-company {
+        @media #{$maxMobile} {
+            margin-top: 25px;
+        }
+        > ul {
+            @extend %center-align;
+            justify-content: center;
+            flex-wrap: wrap;
+            li {
+                display: flex;
+                padding-left: 40px;
+                padding-right: 40px;
+                border-left: 1px solid $flatE6;
+                @media #{$maxMobile} {
+                    margin-bottom: 15px;
+                    border-left: none;
+                }
+                .icon-content {
+                    padding-top: 2px;
+                    padding-left: 10px;
+                }
+                .company-info {
+                    span {
+                        display: block;
+                        color: $flat72;
+                    }
+                }
+                &:last-of-type {
+                    border-left: none;
+                }
+            }
+        }
+    }
+}
